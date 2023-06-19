@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      App / SceneDelegate (iOS only)
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">App / SceneDelegate (iOS only)</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Capacitor App appUrlOpen</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <!-- <p>The Capacitor Browser (SFSafariViewController) is not visible with presentationStyle : fullScreen</p> -->
+      <p>The Capacitor App appUrlOpen does not trigger when App is opened from URL for the first time</p>
+      <br>
+      <ion-label>App appUrlOpen events logs will be here:</ion-label>
+      <ion-textarea
+        placeholder="App appUrlOpen events logs will be here"
+        [autoGrow]="true"
+        [(ngModel)]="this.url">
+      </ion-textarea>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
