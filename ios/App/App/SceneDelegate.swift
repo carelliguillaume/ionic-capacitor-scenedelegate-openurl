@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let url = connectionOptions.urlContexts.first?.url ?? connectionOptions.userActivities.first?.webpageURL  {
             print("SceneDelegate - scene - willConnectTo - url: \(url)")
             
-            //DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            //DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             //    let result = ApplicationDelegateProxy.shared.application(UIApplication.shared, open: url)
             //    print("SceneDelegate - scene - willConnectTo - result: \(result)")
             //}
